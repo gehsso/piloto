@@ -1,2 +1,3 @@
 venv
-teste.js
+__pycache__
+db.sqlite3

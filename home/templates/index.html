@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
-<body>
-    <h1>{{ message }}</h1>
-    <p>Bem-vindo ao nosso site, {{ user_name }}!</p>
+{% extends 'base.html' %}
 
-    <a href="{% url 'index' %}">Home</a>
+{% block titulo  %} Home {% endblock %}
 
-    <a href="{% url 'entre_em_contato' %}">Home</a>
+{% block conteudo  %}  
 
-</body>
-</html>
+    <h5>Bem-vindo ao nosso Sistema Web!!</h5> 
+
+{% endblock %}
