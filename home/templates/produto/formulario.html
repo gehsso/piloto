@@ -2,11 +2,11 @@
 
 {% block titulo  %} Contato {% endblock %}
 
-{% block titulo_page  %} Contato {% endblock %}
+{% block titulo_page  %} Formulário de Produto {% endblock %}
 
 {% block conteudo  %}  
 
-    <form method="POST">
+    <form method="post">
         {% csrf_token %}
         {{ form.as_p }} <!-- Renderiza cada campo do formulário com <p> tags -->
         
@@ -14,4 +14,3 @@
     </form>
 
 {% endblock %}
-
